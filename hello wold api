@@ -1,0 +1,12 @@
+from fastapi import FastAPI
+
+app=FastAPI()
+
+@app.get("/")
+def hello():
+    return "hello world"
+
+
+@app.get("/about")
+def about():
+    return "i am rakesh tawargeri i am a software engineer and an aspiring student"
